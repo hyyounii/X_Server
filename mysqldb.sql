@@ -8,6 +8,9 @@ create table users (
     email varchar(50) not null,
     url varchar(200) 
 );
+
+select * from users;
+select idx, userid from users where idx=5
     
 create table posts (
 	id int auto_increment primary key,
