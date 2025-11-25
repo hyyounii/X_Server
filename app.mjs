@@ -14,6 +14,6 @@ app.use("/auth", authRouter);
 app.use((req, res, next) => {
   res.sendStatus(404);
 });
-
+````
 // db.getConnection().then((connection) => console.log(connection));
 app.listen(config.host.port);

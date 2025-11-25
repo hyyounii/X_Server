@@ -10,7 +10,7 @@ create table users (
 );
 
 select * from users;
-select idx, userid from users where idx=5
+select idx, userid from users where idx=5;
     
 create table posts (
 	id int auto_increment primary key,
@@ -19,3 +19,5 @@ create table posts (
     text varchar(2000) not null,
     foreign key(useridx) references users(idx)
 );
+
+select * from posts;

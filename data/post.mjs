@@ -23,7 +23,7 @@ export async function getAllByUserid(userid) {
 export async function getById(id) {
   return db
     .execute(`${SELECT_JOIN} where p.id=?`, [id])
-    .then((result) => result[0][0]);
+    .then((result) => result[0][0]);  
 }
 
 // 포스트를 작성
